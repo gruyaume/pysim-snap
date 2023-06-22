@@ -1,0 +1,25 @@
+name: pysim
+base: core22
+version: '7e55569f3a'
+summary: Pysim is a tool to program SIMs, USIMs and ISIMs
+description: |
+  Pysim is a tool for managing subscriber identity cards for cellular networks, 
+  so-called SIM cards.
+license: MIT
+grade: devel
+confinement: strict
+source-code: https://gitea.osmocom.org/sim-card/pysim
+
+apps:
+  shell:
+    command: bin/pySim-shell.py
+
+parts:
+  pysim:
+    plugin: python
+    build-packages:
+      - swig
+      - libpcsclite-dev
+    source: https://gitea.osmocom.org/sim-card/pysim.git
+    source-type: git
+    source-commit: 7e55569f3ac20565164439c2c43c1438f29a4c3f
