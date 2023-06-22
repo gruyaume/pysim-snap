@@ -5,7 +5,7 @@ summary: Pysim is a tool to program SIMs, USIMs and ISIMs
 description: |
   Pysim is a tool for managing subscriber identity cards for cellular networks, 
   so-called SIM cards.
-license: MIT
+license: Apache-2.0
 grade: devel
 confinement: strict
 source-code: https://gitea.osmocom.org/sim-card/pysim
